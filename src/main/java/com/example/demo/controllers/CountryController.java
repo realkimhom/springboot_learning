@@ -27,6 +27,8 @@ public class CountryController {
 
     @GetMapping(value = "/get_countries_number")
     public int get_countries_number(){
-        return 100;
+        int x = 100;
+        int y = 10;
+        return x * y - y;
     }
 }
