@@ -24,4 +24,9 @@ public class CountryController {
             throw e;
         }
     }
+
+    @GetMapping(value = "/get_countries_number")
+    public int get_countries_number(){
+        return 100;
+    }
 }
