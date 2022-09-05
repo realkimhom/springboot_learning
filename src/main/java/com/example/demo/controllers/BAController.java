@@ -28,8 +28,13 @@ public class BAController {
 
     @RequestMapping(value = "/test")
     public String hello(){
+//        return "hello world";
+        return "Not just a hello world";
+    }
 
-        return "hello world";
+    @RequestMapping(value="/new_test")
+    public void new_test(){
+        System.out.println("Three little birds!");
     }
 
 }

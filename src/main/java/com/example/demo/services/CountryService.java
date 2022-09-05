@@ -21,8 +21,9 @@ public class CountryService {
     }
 
 
-    // Failed. 
+    // Failed.
     public void save_countries(){
+
         RestTemplate template = new RestTemplate();
         ResponseEntity<List> response = template.getForEntity("https://api.covid19api.com/countries",
                 List.class);
